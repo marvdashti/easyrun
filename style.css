@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f3f8;
+    font-family: sans-serif;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.im-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: #353535;
+}
+.im-title h1 {
+    letter-spacing: 5px;
+}
+.im-title h3 {
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.im-body {
+    background: white;
+    padding: 20px 20px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+}
+.alert {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.alert-danger {
+    background: #dc3545;
+    color: #fff;
+}
+.alert-info {
+    background: #007bff;
+    color: #fff;
+}
+.alert-success {
+    background: #28a745;
+    color: #fff;
+}
+.clear-fix {
+    clear: both;
+}
+.im-form-row {
+    clear: both;
+    margin-bottom: 5px;
+}
+.im-form-label {
+    padding: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+}
+.im-form-inp {
+    padding: 5px;
+    display: table-cell;
+}
+.im-form-inp select {
+    padding: 5px 5px;
+    width: 150px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+.im-import-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+.column-content {
+    padding-right: 10px;
+    display: inline-block;
+}
+.copy-right {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.copy-right p {
+    margin: 5px 0;
+    padding: 0;
+}
+.copy-right p a {
+    color: #777;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .im-form-label,.im-form-inp {
+        display: block;
+    }
+}
