@@ -1,6 +1,6 @@
 <?php
-require_once 'config.php';
-require_once 'imtp.php';
-$imtp = new imtp();
+require 'config.php';
+require 'easyrun.php';
+$easyRun = new easyrun();
 $table = $_POST['table'];
-$imtp->getColumns($table);
+$easyRun->getColumns($table);

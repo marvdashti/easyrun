@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
-require 'imtp.php';
-$imtp = new imtp();
+require 'easyrun.php';
+$easyRun = new easyrun();
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,10 +19,10 @@ $imtp = new imtp();
         <h3>Easy import csv to database</h3>
     </div>
     <div class="im-body">
-        <?php if($imtp->alert != '') { ?>
+        <?php if($easyRun->alert != '') { ?>
         <div class="alert alert-danger">
             <?php
-            echo $imtp->alert;
+            echo $easyRun->alert;
             die();
             ?>
         </div>
@@ -32,7 +32,7 @@ $imtp = new imtp();
                 Database Table:
             </div>
             <div class="im-form-inp">
-                <?php $imtp->getTables(); ?>
+                <?php $easyRun->getTables(); ?>
             </div>
         </div>
         <div class="im-form-row">
@@ -67,7 +67,7 @@ $imtp = new imtp();
     </div>
     <div class="copy-right">
         <p>Developed by <a href="https://mrtolouei.com/" target="_blank">Alireza Tolouei.</a> </p>
-        <p>Get this application on <a href="" target="_blank">Github.</a></p>
+        <p>Get this application on <a href="https://github.com/alirezatolouei/easyrun" target="_blank">Github.</a></p>
     </div>
 </div>
 <script src="body.js"></script>

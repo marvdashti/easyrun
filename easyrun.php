@@ -1,5 +1,5 @@
 <?php
-class imtp
+class easyrun
 {
     private $conn;
     public $alert = '';
